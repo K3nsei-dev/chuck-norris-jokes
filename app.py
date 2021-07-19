@@ -1,6 +1,7 @@
 from flask import Flask
 import requests
 
+
 app = Flask(__name__)
 
 
@@ -9,7 +10,7 @@ def get_chuck_norris_jokes():
     api_url = "https://api.chucknorris.io/jokes/random"
     response = requests.get(api_url).json()
 
-    return "<strong>Random Joke From Chuck Norris:</strong>" and response['value']
+    return "<strong>Random Joke From Chuck Norris:</strong>" + " " + response['value']
 
 
 if __name__ == '__main__':
