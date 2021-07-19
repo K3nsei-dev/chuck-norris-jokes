@@ -13,3 +13,5 @@ protobuf==3.17.3
 six==1.16.0
 virtualenv==20.4.7
 Werkzeug==2.0.1
+
+requests~=2.25.1
